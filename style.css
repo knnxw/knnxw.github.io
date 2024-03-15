@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a; /* Karanlık arka plan */
+    color: #ffffff; /* Beyaz metin */
+    font-family: Arial, sans-serif;
+    margin: 0; /* Boşlukları kaldır */
+    padding: 10px; /* Mobil cihazlarda içeriği sıkışmaktan korur */
+}
+
+#proposal-box {
+    text-align: center;
+    background-color: #333333; /* Koyu arka plan */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Beyaz gölge */
+    max-width: 90%; /* Kutunun maksimum genişliğini sınırla */
+}
+
+#proposal-box p {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #ffcccc; /* Aşk teması için pembemsi ton */
+}
+
+#proposal-box button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#yes-btn {
+    background-color: #004d00; /* Koyu yeşil evet butonu */
+    color: #ffffff;
+}
+
+#yes-btn:hover {
+    background-color: #003300; /* Daha koyu yeşil hover efekti */
+}
+
+#no-btn {
+    background-color: #666666; /* Gri hayır butonu */
+    color: #ffffff;
+}
+
+#no-btn:hover {
+    background-color: #555555; /* Koyu gri hover efekti */
+}
+
+/* Medya sorguları ile mobil uyumluluk sağlama */
+@media (max-width: 768px) {
+    #proposal-box p {
+        font-size: 20px; /* Mobil cihazlarda yazı boyutunu küçült */
+    }
+
+    #proposal-box {
+        padding: 15px; /* Kutunun iç boşluğunu azalt */
+    }
+
+    #proposal-box button {
+        padding: 8px 16px; /* Butonların boyutunu ayarla */
+        font-size: 14px; /* Buton yazı boyutunu küçült */
+    }
+}
+

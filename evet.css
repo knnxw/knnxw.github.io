@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FF0000; /* Kırmızı arka plan */
+    margin: 0;
+    padding: 20px; /* Kutunun ekran kenarlarından biraz uzak durmasını sağlar */
+    color: #ffffff; /* Beyaz metin */
+    font-family: 'Arial', sans-serif;
+}
+
+#love-message-box {
+    background-color: #ffffff; /* Beyaz kutu */
+    color: #000000; /* Siyah metin */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Kutuya hafif bir gölge ekler */
+    text-align: center;
+    max-width: 600px; /* Kutunun maksimum genişliğini sınırlar */
+}
+
+#love-message-box p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    #love-message-box {
+        padding: 20px;
+    }
+
+    #love-message-box p {
+        font-size: 16px;
+    }
+}
+
